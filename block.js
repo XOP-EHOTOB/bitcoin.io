@@ -4,7 +4,7 @@ const  block_io  =  new  BlockIo (process.env.BITCOIN_KEY) ;
 const express = require('express')
 const app = express()
 
-app.get('/api/bitcoin', function (req, res) {
+app.post('/api/bitcoin', function (req, res) {
     res.send('ok')
     console.log(req.body);
 })
